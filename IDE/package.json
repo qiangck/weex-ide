@@ -1,0 +1,31 @@
+{
+  "name": "Weex-IDE",
+  "productName": "Weex IDE",
+  "version": "0.1.0",
+  "description": "A WYSIWYG IDE for Weex",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/weex_toolchain.git"
+  },
+  "keywords": [
+    "weex",
+    "IDE",
+    "Electron"
+  ],
+  "author": "Terry King <terrykingcha@gmail.com>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  },
+  "dependencies": {
+    "codemirror": "^5.16.0",
+    "local-ip": "^1.0.1",
+    "serve": "^1.4.0",
+    "weex-html5": "^0.2.18",
+    "weex-transformer": "^0.3.1"
+  }
+}

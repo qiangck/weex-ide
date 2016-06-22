@@ -1,0 +1,61 @@
+<template>
+  <div class="wrap">
+    <text class="title">Key Commands For IDE</text>
+    <div class="keymap" repeat="{{keymaps}}">
+      <text class="key">{{key}}</text>
+      <text class="sep">:</text>
+      <text class="desc">{{desc}}</text>
+    </div>
+  </div>
+</template>
+
+<style>
+  .wrap {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 52;
+    color: #777777;
+    margin-bottom: 20;
+  }
+
+  .keymap {
+    padding-top: 10;
+    padding-bottom: 10;
+    flex-direction: row;
+  }
+
+  .key {
+    font-size: 40;
+    color: #666666;
+    font-weight: bold;
+  }
+
+  .sep {
+    font-size: 40;
+    color: #444444;
+    padding-left: 10;
+    padding-right: 10;
+  }
+
+  .desc {
+    font-size: 40;
+    color: #444444;
+    font-style: italic;
+  }
+
+</style>
+
+<script type="data">
+{
+  keymaps: [
+    {key: 'Cmd-Alt-T', desc: 'Open Dev Tools'},
+    {key: 'Cmd-Alt-F', desc: 'Toggle Fullscreen'},
+    {key: 'Cmd-Alt-R', desc: 'Toggle QRCode'},
+    {key: 'Cmd-Alt-L', desc: 'Toggle Logs'},
+    {key: 'Cmd-S', desc: 'Preview'}
+  ]
+}
+</script>

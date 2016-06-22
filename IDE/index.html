@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weex &lt;WYSIWYG/&gt; IDE</title>
+<link rel="stylesheet" type="text/css" href="node_modules/codemirror/lib/codemirror.css" />
+<link rel="stylesheet" type="text/css" href="node_modules/codemirror/theme/monokai.css" />
+<link rel="stylesheet" href="node_modules/codemirror/addon/fold/foldgutter.css" />
+<link rel="stylesheet" href="node_modules/codemirror/addon/display/fullscreen.css" />
+<link rel="stylesheet" href="index.css" />
+</head>
+<body>
+<header>
+    <span>beta</span>
+    <a href="http://electron.atom.io/" target="_blank">Power By Electron</a>
+</header>
+<div id="wrap">
+    <div id="codepen">
+        <div id="code"></div>
+        <div id="logs"><pre></pre></div>
+    </div>
+    <div id="preview">
+        <webview id="html5" nodeintegration></webview>
+        <div id="qrcode">
+            <h3>Use Playground App To Scan</h3>
+            <canvas></canvas>
+        </div>
+    </div>
+</div>
+<footer>
+    <copyright>All Rights Reserved by Alibaba Group</copyright>
+</footer>
+<script src="node_modules/codemirror/lib/codemirror.js"></script>
+<script src="node_modules/codemirror/addon/fold/foldcode.js"></script>
+<script src="node_modules/codemirror/addon/fold/foldgutter.js"></script>
+<script src="node_modules/codemirror/addon/fold/brace-fold.js"></script>
+<script src="node_modules/codemirror/addon/fold/xml-fold.js"></script>
+<script src="node_modules/codemirror/addon/fold/comment-fold.js"></script>
+<script src="node_modules/codemirror/addon/fold/indent-fold.js"></script>
+<script src="node_modules/codemirror/addon/hint/show-hint.js"></script>
+<script src="node_modules/codemirror/addon/hint/xml-hint.js"></script>
+<script src="node_modules/codemirror/addon/hint/html-hint.js"></script>
+<script src="node_modules/codemirror/addon/hint/javascript-hint.js"></script>
+<script src="node_modules/codemirror/addon/hint/css-hint.js"></script>
+<script src="node_modules/codemirror/addon/display/fullscreen.js"></script>
+<script src="node_modules/codemirror/mode/javascript/javascript.js"></script>
+<script src="node_modules/codemirror/mode/css/css.js"></script>
+<script src="node_modules/codemirror/mode/xml/xml.js"></script>
+<script src="node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="renderer.js"></script>
+</body>
+</html>
