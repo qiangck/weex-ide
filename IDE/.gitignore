@@ -1,4 +1,5 @@
 node_modules
-sources/*.we
+sources/*
 !sources/keymaps.we
-bundles/*.js
+bundles/*
+package/*

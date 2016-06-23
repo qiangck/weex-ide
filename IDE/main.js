@@ -11,7 +11,7 @@ let mainWindow;
 let serveProcess;
 const config = require('./config.json');
 const entry = `file://${__dirname}/index.html`;
-const icon = `${__dirname}/assets/weex_android_icon.png`;
+const icon = `${__dirname}/assets/weex_icon.png`;
 
 function createWindow() {
   app.dock.setIcon(icon);

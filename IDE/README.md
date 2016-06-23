@@ -15,4 +15,14 @@ cd weex_toolchain/IDE
 npm install && npm start
 ```
 
+### Build App/Installer
+
+By default, the project will build an electron app and an installerd for OSX(darwin x64), if you want to build for anthor platform, please see [electron-packager](https://www.npmjs.com/package/electron-packager) for help.
+
+```bash
+npm run build
+```
+
+Then you'll find `package/Weex IDE.dmg`.
+
 #### License [CC0 (Public Domain)](LICENSE.md)
