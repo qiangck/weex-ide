@@ -25,4 +25,8 @@ npm run build
 
 Then you'll find `package/Weex IDE.dmg`.
 
+## About the QRCode
+
+Basicly, the `Weex IDE` will open a tcp connet at `8999` port which defined in `config.json` to show the qrcode. If the port number is used, please configure it. And you will find the file at `Weex IDE.app/Contents/Resources/app/config.json`.
+
 #### License [CC0 (Public Domain)](LICENSE.md)
