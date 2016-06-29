@@ -102,16 +102,14 @@ const sourceFilepath = path.join(__dirname, 'sources', 'code.we');
 const bundleFilepath = path.join(__dirname, 'bundles', 'code.js');
 function saveCode(codeStr) {
     fs.writeFileSync(sourceFilepath, codeStr, {
-        encoding: 'utf-8',
-        mode: '0o755'
+        encoding: 'utf-8'
     });
 
     const ret = transformer.transform('code', codeStr);
     printLogs(ret.logs);
 
     fs.writeFileSync(bundleFilepath, ret.result, {
-        encoding: 'utf-8',
-        mode: '0o755'
+        encoding: 'utf-8'
     });
    
     html5El.style.display = '';

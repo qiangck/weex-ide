@@ -27,6 +27,10 @@ function createServer() {
     static(req, res, finalHandler(req, res));
   });
 
+  server.on('close', e => {
+    server = null;
+  })
+
   // Listen
   server.listen(config['serve-port']);
 }
@@ -170,8 +174,11 @@ function createAboutWindow() {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', e => {
-  createServer();
   createMenu();
+
+  if (server == null) {
+    createServer();
+  }
 
   if (mainWindow == null) {
     createMainWindow();
@@ -192,6 +199,10 @@ app.on('window-all-closed', e => {
 app.on('activate',  e => {
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
+  if (server == null) {
+    createServer();
+  }
+
   if (mainWindow == null) {
     createMainWindow();
   }
